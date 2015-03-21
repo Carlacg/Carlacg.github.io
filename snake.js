@@ -46,10 +46,11 @@ var moveSnake = function(snake) {
 
 var advanceGame = function() {
   var newSnake = moveSnake(snake);
-
+  var score = snake.length-1;
+  
   if (ate(newSnake, snake)) {
     CHUNK.endGame();
-    CHUNK.flashMessage("Woops! You ate yourself! Score:" + snake.length-1);
+    CHUNK.flashMessage("Woops! You ate yourself! Score:" + score);
   }
 
   if (ate(newSnake, [apple])) {
@@ -59,7 +60,7 @@ var advanceGame = function() {
 
   if (ate(newSnake, CHUNK.gameBoundaries())) {
     CHUNK.endGame();
-    CHUNK.flashMessage("Woops! you hit a wall! Score:" + snake.length-1);
+    CHUNK.flashMessage("Woops! you hit a wall! Score:" + score);
   }
 
   snake = newSnake;
