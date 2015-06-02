@@ -9,15 +9,55 @@
     <!-- Estilos -->
     <link rel="stylesheet" href="css/banner.css"/>
     <link rel="stylesheet" href="css/principal.css"/>
+    <link rel="stylesheet" href="css/contacto.css"/>
     <!-- Banner y barra navegadora -->
     <script src="javascript/banner.js" language="JavaScript" type="text/javascript"></script>
 </head>
 <body id="contacto">
 <div id="contenedor">
     <div id="contPrincipal">
-        <p>Por favor ingrese sus detalles de contacto y un mensaje corto </p>
+        <h2>Contacto</h2>
+
+        <p>Por favor completa el formulario a continuación para contactar conmigo, no olvides hacer clic en "enviar"
+            cuando hayas terminado!</p>
+
+        <p> Se le respondera a la brevedad posible a través de un correo a la dirección de correo electrónico que
+            proporcione. </p>
+
+        <form id="contact" action="">
+            <div>
+                <label for="nombre">
+                    * Nombre:
+                </label>
+                <input class="textbox" type="text" id="nombre" required/>
+            </div>
+            <div>
+                <label for="correo">
+                    * E-mail:
+                </label>
+                <input class="textbox" type="email" id="correo"/>
+            </div>
+            <div>
+                <label for="web">
+                    Sitio Web:
+                </label>
+                <input class="textbox" type="text" id="web"/>
+            </div>
+            <div>
+                <label for="comentario">
+                    * Comentario:
+                </label>
+                <textarea cols="70" rows="10" id="comentario" name="comentario"></textarea>
+            </div>
+            <div id="botones">
+                <input class="boton" type="reset" value="Limpiar campos"/>
+                <button class="boton">Enviar</button>
+            </div>
+        </form>
     </div>
+    <!--Post recientes-->
     <script src="javascript/post_recientes.js" language="JavaScript" type="text/javascript"></script>
+    <!--Pie de página-->
     <script src="javascript/footer.js" language="JavaScript" type="text/javascript"></script>
 </div>
 </body>

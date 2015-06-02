@@ -1,0 +1,47 @@
+#contact label{
+    display:block;
+    text-align: left;
+    color:#b0978a;
+    width: 7em;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 1em;
+    margin-left: 2em;
+}
+
+#contact{
+    margin-top: 2em;
+}
+
+.textbox{
+    width: 16em;
+    height: 25px;
+    color: #b0aaa0;
+    margin-left: 2.4em;
+}
+
+textarea{
+    margin-left: 2.4em;
+    color: #b0aaa0;
+}
+
+.boton{
+    display: inline-block;
+    width: 8em;
+    background-color: #b0978a;
+    color: beige;
+    border:1px solid #b0978a;
+    border-radius:5px;
+    height: 2em;
+    margin-right: 4%;
+    margin-top: 1em;
+}
+
+.boton:hover{
+    background-color:#927b6f ;
+    border:1px solid #927b6f;
+}
+
+#botones{
+    margin-left: 47%;
+}
