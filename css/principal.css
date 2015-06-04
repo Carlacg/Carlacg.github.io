@@ -9,6 +9,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'walkway';
     src: url('../font/Walkaway/walkway_semibold-webfont.eot');
@@ -22,26 +23,28 @@
 
 }
 
-h2{
+h2 {
     font-size: 2em;
     font-family: 'walkway';
     color: #b0978a;
     text-transform: uppercase;
     margin-left: 10px;
 }
-h3{
+
+h3 {
     font-size: 1.5em;
     font-family: 'walkway';
     color: #b0978a;
     text-transform: uppercase;
     margin-left: 10px;
 }
-h3 a{
+
+h3 a {
     color: #b0978a;
     text-decoration: none;
 }
 
-h4{
+h4 {
     font-size: 1em;
     font-family: 'walkway';
     color: #b0978a;
@@ -50,73 +53,84 @@ h4{
     margin-left: 10px;
     margin-top: 3.5em;
 }
-p{
+
+p {
     clear: both;
     font-family: 'robotolight';
     font-size: 14px;
     text-align: justify;
     margin: 10px;
 }
-#contenedor,#banner{
+
+#contenedor, #banner {
     background-color: #ffffff;
     box-shadow: 1px 2px 4px #e3e1df;
 }
-#contPrincipal{
+
+#contPrincipal {
     float: left;
     width: 610px;
     margin-left: 2em;
 }
-#contSecundario{
+
+#contSecundario {
     float: right;
     width: 320px;
     margin-top: 3.5em;
     margin-right: 1em;
 }
-.arrow img{
+
+.arrow img {
     vertical-align: middle;
 }
 
-.contIcon .icon{
+.contIcon .icon {
     vertical-align: middle;
 }
-.contIcon p{
+
+.contIcon p {
     color: #b0978a;
     font-size: 12px;
 }
-#contPrincipal, #contSecundario{
+
+#contPrincipal, #contSecundario {
     margin-bottom: 5em;
 }
 
-footer,footer p{
+footer, footer p {
     padding: .5em 0;
     display: block;
     clear: both;
     text-align: center;
     color: #b0978a;
 }
-footer{
+
+footer {
     border-top: #f0eafb 1px solid;
 }
 
-.contIcon a{
+.contIcon a {
     color: #b0978a;
     text-decoration: none;
 }
-article{
+
+article {
     border-bottom: #e3e1df 1px solid;
     margin-top: 3em;
 }
-.preview{
+
+.preview {
     margin: auto;
     padding: auto;
     display: block;
-    border:#f0eafb 2px solid;
+    border: #f0eafb 2px solid;
 }
-body{
+
+body {
     background-image: url("../imagenes/fondo.png");
 }
 
-p.mas a{
+p.mas a {
     margin-left: 85%;
     color: #6bd5f4;
     font-weight: bold;
@@ -124,23 +138,25 @@ p.mas a{
     font-size: 15px;
 }
 
-#contSecundario .img, #contSecundario img{
+#contSecundario .img, #contSecundario img {
     float: left;
     width: 100px;
     margin-bottom: 10px;
     clear: both;
 }
 
-#contSecundario #buscar img{
+#contSecundario #buscar img {
     width: 20px;
     float: right;
     margin-top: 6px;
     margin-right: 3.6em;
 }
-#contSecundario #buscar input{
+
+#contSecundario #buscar input {
     width: 11em;
 }
-#contSecundario .link{
+
+#contSecundario .link {
     width: 190px;
     float: right;
     color: #b0978a;
@@ -150,21 +166,84 @@ p.mas a{
     font-weight: bold;
 }
 
-#contSecundario a:hover{
+#contSecundario a:hover {
     color: #6bd5f4;
 }
 
-#contSecundario #buscar label{
+#contSecundario #buscar label {
     font-family: robotolight;
     color: #b0978a;
     margin-left: 10px;
 }
 
-#contSecundario input{
+#contSecundario input {
     color: #b0aaa0;
     font-family: robotolight;
 }
 
-label{
+label {
     font-family: robotolight;
+}
+
+@media screen and (max-width: 400px), screen and (max-device-width: 400px) {
+     #menu ul {
+        padding: 0px;
+        width: 100%;
+    }
+
+    #menu ul li {
+        width: 100%;
+    }
+    #menu li{
+        display: inline;
+        margin: 0 1em 0 0;
+    }
+    #menu a{
+        display: inline;
+        padding: 0;
+        border-bottom: 0;
+    }
+    #contenedor {
+        padding: 2em 3em;
+    }
+
+    #menu {
+        font-size: 25px;
+        border: none;
+    }
+
+    #contPrincipal {
+        float: left;
+        width: 85%;
+        margin-right: 5%;
+        margin-bottom: 1em;
+    }
+
+    #contSecundario {
+        float: left;
+        width: 40%;
+        margin-bottom: 1em;
+        margin-left: 5%;
+    }
+
+    footer {
+        padding: 2em 3em;
+    }
+    #banner{
+        width: 100%;
+        box-shadow: none;
+    }
+    #contenedor{
+        width: 85%;
+        background-color: #ffffff;
+        box-shadow: 1px 2px 4px #e3e1df;
+    }
+}
+
+header a {
+    display: block;
+}
+
+#menu ul.visible {
+    display: block;
 }

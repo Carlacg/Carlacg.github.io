@@ -1,5 +1,5 @@
 document.writeln( '<div id="banner">' );
-document.writeln( '<a href="index.html"><img id="imagen" src="imagenes/banner.png" alt="FoodCourt" /></a>' );
+document.writeln( '<header><a href="index.html"><img id="imagen" src="imagenes/banner.png" alt="FoodCourt" /></a></header>' );
 document.writeln( '<nav id="menu">' );
 document.writeln( '<ul><li class="inicio"><a href="index.html">Inicio</a></li>' );
 document.writeln( '<li><a class="receta" href="recetas.html">Recetas</a>' );

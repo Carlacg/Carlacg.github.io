@@ -25,6 +25,7 @@
 #contacto .contacto, #inicio .inicio, #receta .receta, #acerca .acerca{
     color: #b0978a;
     text-decoration: underline;
+    background-color: rgba(245, 245, 220, 0.6);
 }
 #menu{height: 30px;	width: 100%; clear: both; background-color:#ffffff;border-bottom:#b0aaa0 1px solid; border-top:#b0aaa0 1px solid;}
 #imagen{
