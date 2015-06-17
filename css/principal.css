@@ -185,7 +185,7 @@ label {
 }
 
 @media screen and (max-width: 400px), screen and (max-device-width: 400px) {
-     #menu ul {
+    #menu ul {
         padding: 0px;
         width: 100%;
     }
@@ -193,15 +193,18 @@ label {
     #menu ul li {
         width: 100%;
     }
-    #menu li{
+
+    #menu li {
         display: inline;
         margin: 0 1em 0 0;
     }
-    #menu a{
+
+    #menu a {
         display: inline;
         padding: 0;
         border-bottom: 0;
     }
+
     #contenedor {
         padding: 2em 3em;
     }
@@ -228,16 +231,19 @@ label {
     footer {
         padding: 2em 3em;
     }
-    #banner{
+
+    #banner {
         width: 100%;
         box-shadow: none;
     }
-    #contenedor{
+
+    #contenedor {
         width: 85%;
         background-color: #ffffff;
         box-shadow: 1px 2px 4px #e3e1df;
     }
-    #contSecundario .link,#contSecundario #buscar label{
+
+    #contSecundario .link, #contSecundario #buscar label {
         font-size: 20px;
     }
 }

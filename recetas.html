@@ -9,6 +9,31 @@
     <!-- Estilos -->
     <link rel="stylesheet" href="css/banner.css"/>
     <link rel="stylesheet" href="css/principal.css"/>
+    <!-- Scripts -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script type="text/javascript"
+            src="http://flesler-plugins.googlecode.com/files/jquery.scrollTo-1.4.2-min.js"></script>
+    <script type="text/javascript" src="javascript/jquery.localscroll-1.2.7-min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("a.arrow img").click(function (e) {
+                e.preventDefault();
+                volver = "#contenedor";
+                $('html, body').animate({
+                    scrollTop: $(volver).offset().top
+                }, 2000);
+            });
+            $("li.receta ul li").click(function (e) {
+                e.preventDefault();
+                ir = ($(this).find("a").attr("href"));
+                arreglo = ir.split("#");
+                ir = ir.split("#")[1];
+                $('html, body').animate({
+                    scrollTop: $("#"+ir).offset().top
+                }, 2000);
+            });
+        });
+    </script>
 </head>
 <body id="receta">
 <div id="contenedor">
