@@ -1,4 +1,4 @@
-@media only screen and (max-width: 480px), only screen and (max-device-width: 480px){
+@media only screen and (max-width: 520px), only screen and (max-device-width: 520px){
     #banner{
         width: 100%;
         box-shadow: none;
@@ -123,7 +123,7 @@
     }
 }
 
-@media only screen and (max-width: 800px) and (min-width: 490px), only screen and (max-device-width: 800px) and (min-device-width: 490px){
+@media only screen and (max-width: 800px) and (min-width: 530px), only screen and (max-device-width: 800px) and (min-device-width: 530px){
 
     body{
         padding: 1%;
