@@ -23,9 +23,7 @@
 }
 #contenedor{ width: 1000px; margin: auto; padding: auto;}
 #contacto .contacto, #inicio .inicio, #receta .receta, #acerca .acerca{
-    color: #b0978a;
-    text-decoration: underline;
-    background-color: rgba(245, 245, 220, 0.6);
+    color: #87c7df;
 }
 #menu{height: 30px;	width: 100%; clear: both; background-color:#ffffff;border-bottom:#b0aaa0 1px solid; border-top:#b0aaa0 1px solid;}
 #imagen{
@@ -108,4 +106,12 @@ nav{ margin: auto; width: 950px; font-family:'walkway';}
 #menu ul li:hover > ul
 {
     display:block
+}
+
+#botonMenu{
+    font-family:'walkway';
+    font-size: 2em;
+    text-transform: uppercase;
+    display: none;
+    color: #b0978a;
 }

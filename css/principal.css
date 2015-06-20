@@ -80,10 +80,6 @@ p {
     margin-right: 1em;
 }
 
-.arrow img {
-    vertical-align: middle;
-}
-
 .contIcon .icon {
     vertical-align: middle;
 }
@@ -183,75 +179,48 @@ p.mas a {
 label {
     font-family: robotolight;
 }
-
-@media screen and (max-width: 400px), screen and (max-device-width: 400px) {
-    #menu ul {
-        padding: 0px;
-        width: 100%;
-    }
-
-    #menu ul li {
-        width: 100%;
-    }
-
-    #menu li {
-        display: inline;
-        margin: 0 1em 0 0;
-    }
-
-    #menu a {
-        display: inline;
-        padding: 0;
-        border-bottom: 0;
-    }
-
-    #contenedor {
-        padding: 2em 3em;
-    }
-
-    #menu {
-        font-size: 25px;
-        border: none;
-    }
-
-    #contPrincipal {
-        float: left;
-        width: 85%;
-        margin-right: 5%;
-        margin-bottom: 1em;
-    }
-
-    #contSecundario {
-        float: left;
-        width: 40%;
-        margin-bottom: 1em;
-        margin-left: 5%;
-    }
-
-    footer {
-        padding: 2em 3em;
-    }
-
-    #banner {
-        width: 100%;
-        box-shadow: none;
-    }
-
-    #contenedor {
-        width: 85%;
-        background-color: #ffffff;
-        box-shadow: 1px 2px 4px #e3e1df;
-    }
-
-    #contSecundario .link, #contSecundario #buscar label {
-        font-size: 20px;
-    }
-}
-
-header a {
+#toTop, #toBottom {
     display: block;
+    position: fixed;
+    right: 0;
+    padding: 10px;
 }
-
-#menu ul.visible {
-    display: block;
+#toBottom{
+    top: 90%;
+}
+#toTop{
+    top: 80%;
+}
+#pasos ul li, #pasos ol li,#pasos p {
+    font-family: robotolight;
+    color: #927b6f;
+    font-size: 14px;
+    text-align: justify;
+    margin-right: 1em;
+}
+table{
+    width: 80%;
+    margin-left: 5%;
+}
+table img{
+    width: 130px;
+    vertical-align: middle;
+}
+.img_cont{
+    width: 130px;
+    height: 90px;
+    overflow: hidden;
+    border: #5c5a58 2px solid;
+}
+table a{
+    text-align: left;
+    color: #927b6f;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: robotolight;
+    font-size: 12px;
+}
+table a:hover{
+    color: #6bd5f4;
 }

@@ -9,31 +9,11 @@
     <!-- Estilos -->
     <link rel="stylesheet" href="css/banner.css"/>
     <link rel="stylesheet" href="css/principal.css"/>
+    <link rel="stylesheet" href="css/responsive.css" media="screen"/>
     <!-- Scripts -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-    <script type="text/javascript"
-            src="http://flesler-plugins.googlecode.com/files/jquery.scrollTo-1.4.2-min.js"></script>
-    <script type="text/javascript" src="javascript/jquery.localscroll-1.2.7-min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("a.arrow img").click(function (e) {
-                e.preventDefault();
-                volver = "#contenedor";
-                $('html, body').animate({
-                    scrollTop: $(volver).offset().top
-                }, 2000);
-            });
-            $("li.receta ul li").click(function (e) {
-                e.preventDefault();
-                ir = ($(this).find("a").attr("href"));
-                arreglo = ir.split("#");
-                ir = ir.split("#")[1];
-                $('html, body').animate({
-                    scrollTop: $("#"+ir).offset().top
-                }, 2000);
-            });
-        });
-    </script>
+    <script type="text/javascript" src="javascript/scroll.js"></script>
+    <script type="text/javascript" src="javascript/scroll_general.js"></script>
 </head>
 <body id="receta">
 <div id="contenedor">
@@ -41,47 +21,117 @@
     <script src="javascript/banner.js" language="JavaScript" type="text/javascript"></script>
     <div id="contPrincipal">
         <div id="entradas">
-            <h2>Entradas <a class="arrow" href="recetas.html"><img src="imagenes/iconos/arrow_up.png" alt="Inicio"/></a>
-            </h2>
-
-            <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of
-                evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley
-                of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike
-                down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My
-                brothers. And you will know My name is the Lord when I lay My vengeance upon thee.</p>
+            <h2>Entradas</h2>
+            <table>
+                <tr>
+                    <td>
+                        <div class="img_cont"><img src="imagenes/entradas/1.jpg" alt="quesadilla"/></div>
+                    </td>
+                    <td><a href="quesadilla.html">Quesadillas de camarón con queso parmesano</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="img_cont"><img src="imagenes/entradas/2.jpg" alt="dip"/></div>
+                    </td>
+                    <td><a href="">Dip de queso de cabra y champiñones</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="img_cont"><img src="imagenes/entradas/3.jpg" alt="pan"/></div>
+                    </td>
+                    <td><a href="">Pan de ajo con queso</a></td>
+                </tr>
+            </table>
         </div>
 
         <div id="platosF">
-            <h2>Platos Fuertes <a class="arrow" href="recetas.html"><img src="imagenes/iconos/arrow_up.png"
-                                                                         alt="Inicio"/></a></h2>
-
-            <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of
-                evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley
-                of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike
-                down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My
-                brothers. And you will know My name is the Lord when I lay My vengeance upon thee.</p>
+            <h2>Platos Fuertes</h2>
+            <table>
+                <tr>
+                    <td>
+                        <div class="img_cont"><img src="imagenes/plato_fuerte/1.jpg" alt="pollomiel"/></div>
+                    </td>
+                    <td><a href="">Pollo con ajo y miel</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="img_cont"><img src="imagenes/plato_fuerte/2.jpg" alt="pollocajun"/></div>
+                    </td>
+                    <td><a href="">Pollo estilo cajun con salsa de piña</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="img_cont"><img src="imagenes/plato_fuerte/3.jpg" alt="camarones"/></div>
+                    </td>
+                    <td><a href="">Camarones en salsa Hoisin</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="img_cont"><img src="imagenes/plato_fuerte/4.jpg" alt="pasta"/></div>
+                    </td>
+                    <td><a href="">Pasta tipo ziti al horno con pollo y queso parmesano</a></td>
+                </tr>
+            </table>
         </div>
 
         <div id="postres">
-            <h2>Postres <a class="arrow" href="recetas.html"><img src="imagenes/iconos/arrow_up.png" alt="Inicio"/></a>
-            </h2>
-
-            <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of
-                evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley
-                of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike
-                down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My
-                brothers. And you will know My name is the Lord when I lay My vengeance upon thee.</p>
+            <h2>Postres</h2>
+            <table>
+                <tr>
+                    <td>
+                        <div class="img_cont"><img src="imagenes/postres/1.jpg" alt="cupcakelimón"/></div>
+                    </td>
+                    <td><a href="cupcakes_limon.html">Cupcakes de limón y merengue</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="img_cont"><img src="imagenes/postres/2.jpg" alt="sorbete"/></div>
+                    </td>
+                    <td><a href="">Sorbete de kiwi</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="img_cont"><img src="imagenes/postres/3.jpg" alt="cupcakezanahoria"/></div>
+                    </td>
+                    <td><a href="">Cupcakes de zanahoria con frosting de queso crema</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="img_cont"><img src="imagenes/postres/4.jpg" alt="pingüino"/></div>
+                    </td>
+                    <td><a href="">Pastelitos de chocolate rellenos de crema</a></td>
+                </tr>
+            </table>
         </div>
 
         <div id="bebidas">
-            <h2>Bebidas <a class="arrow" href="recetas.html"><img src="imagenes/iconos/arrow_up.png" alt="Inicio"/></a>
-            </h2>
-
-            <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of
-                evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley
-                of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike
-                down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My
-                brothers. And you will know My name is the Lord when I lay My vengeance upon thee.</p>
+            <h2>Bebidas</h2>
+            <table>
+                <tr>
+                    <td>
+                        <div class="img_cont"><img src="imagenes/bebidas/1.jpg" alt="smoothie"/></div>
+                    </td>
+                    <td><a href="smoothie.html.html">Smoothie Tropical</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="img_cont"><img src="imagenes/bebidas/2.jpg" alt="limonada_blueberry"/></div>
+                    </td>
+                    <td><a href="">Limonada de Blueberry</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="img_cont"><img src="imagenes/bebidas/3.jpg" alt="limonada_piña"/></div>
+                    </td>
+                    <td><a href="">Limonada de piña</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="img_cont"><img src="imagenes/bebidas/4.jpg" alt="malteada"/></div>
+                    </td>
+                    <td><a href="">Maletada de chocolate con trozos de brownie</a></td>
+                </tr>
+            </table>
         </div>
     </div>
 
@@ -89,6 +139,10 @@
     <script src="javascript/post_recientes.js" language="JavaScript" type="text/javascript"></script>
     <!--Pie de página-->
     <script src="javascript/footer.js" language="JavaScript" type="text/javascript"></script>
+</div>
+<div id="scrollto">
+    <a id="toTop" href=""><img src="imagenes/iconos/arrow-up-bold-circle.png" alt="Top"/></a>
+    <a id="toBottom" href=""><img src="imagenes/iconos/arrow-down-bold-circle.png" alt="Down"/></a>
 </div>
 </body>
 </html>

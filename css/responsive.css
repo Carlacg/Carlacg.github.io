@@ -1,0 +1,180 @@
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px){
+    #banner{
+        width: 100%;
+        box-shadow: none;
+    }
+
+    #banner img#imagen{
+        width: 100%;
+    }
+
+    #contenedor{
+        width: 100%;
+    }
+
+    #botonMenu{
+        margin: 1em auto;
+        display: block;
+        border: none;
+        background: none;
+    }
+
+    #menu{
+        display: none;
+        border: none;
+    }
+
+    #menu li {
+        display: inline;
+        margin: 0 1em 0 0;
+    }
+
+    #menu a {
+        display: inline;
+        padding: 0;
+        border-bottom: 0;
+    }
+
+
+    #menu ul li{
+        position: relative;
+        display: table;
+        font-size: 26px;
+    }
+
+    #menu ul li ul{
+        position: relative;
+        border: none;
+    }
+    #menu ul li ul li{
+        font-size: 16px;
+    }
+
+    #contenedor{
+        padding: 0;
+    }
+
+    #contPrincipal{
+        width: 90%;
+        padding: 5%;
+        display: table;
+        margin: 0 auto;
+    }
+    .preview{
+        width: 100%;
+    }
+
+    #contSecundario{
+        width: 90%;
+    }
+    #contSecundario #buscar{
+        width: 100%;
+        display: table;
+        margin: 0 auto;
+        float: left;
+    }
+
+    #contSecundario #buscar label{
+        display: block;
+        max-width: 50%;
+        margin-bottom: .4em;
+    }
+    #contSecundario #buscar input{
+        margin-bottom: 1em;
+    }
+
+    #contSecundario .img, .link {
+        max-width: 50%;
+        float: left;
+    }
+    #contSecundario a.img{
+        float: left;
+    }
+    #contSecundario a.link{
+        font-size: 1em;
+        text-align: justify;
+        margin: 0 10px;
+        float: left;
+    }
+
+    #contact, #comment{
+        width: 100%;
+    }
+    #contact *, #comment *{
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        padding: 0;
+    }
+
+    #contact label, #comment label{
+        width: auto;
+        font-size: 1.2em;
+    }
+    #pasos {
+    width: 100%;
+    }
+    #comment #botones{
+        margin: 0;
+    }
+    video{
+        width: 90%    !important;
+        height: auto   !important;
+    }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 490px), only screen and (max-device-width: 800px) and (min-device-width: 490px){
+
+    body{
+        padding: 1%;
+        width: 95%;
+    }
+
+    #banner img.imagen{
+        width: 100%;
+    }
+
+    #contenedor{
+        width: 100%;
+    }
+
+    #menu{
+        display: block;
+    }
+
+
+    #imagen{
+        width: 50%;
+    }
+    #banner{
+        width: 100%;
+    }
+
+    #menu ul{
+        float: none;
+        display: table;
+        margin: 0 auto;
+    }
+    #menu li a{
+        padding: 0 20%;
+    }
+
+    #contPrincipal{
+        width: 90%;
+    }
+
+    #contSecundario{
+        width: 45%;
+    }
+    #contSecundario{
+        display: table;
+        margin: 0 auto;
+        float: none;
+    }
+
+}
+@media only screen and (min-width: 850px), only screen and (min-device-width: 850px){
+    #menu{
+        display: block;
+    }
+}

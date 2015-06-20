@@ -1,0 +1,132 @@
+#img_recetas img {
+    width: 65%;
+    margin: auto;
+    padding: auto;
+    display: block;
+    border: #f0eafb 2px solid;
+}
+
+#pasos {
+    margin: auto;
+    margin-top: 2em;
+    border: #d1cfcd 4px double;
+    width: 80%;
+    padding: auto;
+}
+
+#pasos p.times, #img_recetas p {
+    text-transform: uppercase;
+    font-size: 9px;
+    color: #927b6f;
+    text-align: center;
+}
+
+#pasos img.icon, #img_recetas img.icon {
+    vertical-align: bottom;
+    width: 15px;
+    border: none;
+    display: inline;
+}
+
+#pasos h4, #seccion_comentarios h4{
+    text-decoration: none;
+    margin: .5em .5em;
+}
+
+#pasos h5 {
+  font-size: 0.85em;
+  font-family: 'walkway';
+  color: #b0978a;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+
+#pasos ul li em, #pasos ol li em{
+    font-size: 12px;
+    color: #b0aaa0;
+}
+
+#pasos ol li{
+    margin-top: .5em;
+}
+
+#pasos video {
+  margin-left: 10px;
+  width: 465px;
+}
+
+#fecha p, #fecha p a{
+    color: #b0aaa0;
+    font-size: 11px;
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#comment label{
+    display:block;
+    text-align: left;
+    color:#b0978a;
+    width: 7em;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 1em;
+    margin-left: 2em;
+}
+
+#comment{
+    margin-top: 1em;
+}
+
+.textbox{
+    width: 404px;
+    height: 25px;
+    color: #b0aaa0;
+    margin-left: 2.6em;
+}
+
+textarea{
+    margin-left: 3em;
+    color: #b0aaa0;
+}
+
+.boton{
+    display: inline-block;
+    width: 9em;
+    background-color: #b0978a;
+    color: beige;
+    border:1px solid #b0978a;
+    border-radius:5px;
+    height: 2em;
+    margin-right: 4%;
+    margin-top: 1em;
+}
+
+.boton:hover{
+    background-color:#927b6f ;
+    border:1px solid #927b6f;
+}
+
+#botones{
+    margin-left: 6%;
+}
+
+#comentarios{
+    margin-top: 2em;
+}
+
+hr{
+    margin-top: 2em;
+    text-align: center;
+    background-color: #e3e1df;
+    height: 1px;
+    border: none;
+}
+
+#fecha{
+    border: 1px solid #e3e1df;
+    border-right: none;
+    border-left: none;
+    margin: 2em 0;
+}
