@@ -16,4 +16,13 @@ function saveComment(usuario, email, comentario, receta) {
     dataBase.transaction(function (tx) {
       tx.executeSql("INSERT INTO comentario (usuario, email, comentario, receta) VALUES ('" + usuario + "', '" + email + "', '" + comentario + "', '" + receta + "')");
   });
+  createCookie("nombre", usuario, 7);
+  createCookie("correo", email, 7);
+}
+
+function createCookie(key, value, days) {
+  var date = new Date();
+  date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+  var expires = "expires=" + date.toUTCString();
+  document.cookie = key + "=" + value + "; " + expires;
 }

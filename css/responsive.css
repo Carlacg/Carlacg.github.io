@@ -9,14 +9,19 @@
     }
 
     #contenedor{
-        width: 100%;
+        width: 96%;
     }
 
     #botonMenu{
-        margin: 1em auto;
+        font-size: 4em;
         display: block;
         border: none;
         background: none;
+        margin: .5em auto 0 auto;
+    }
+
+    #botonMenu img{
+        height: 100%;
     }
 
     #menu{
@@ -24,14 +29,14 @@
         border: none;
     }
 
-    #menu li {
-        display: inline;
-        margin: 0 1em 0 0;
+    #menu ul {
+        width: inherit;
+        margin: 0 auto;
     }
 
     #menu a {
-        display: inline;
-        padding: 0;
+        font-size: 2.5em;
+        margin: 7% 0;
         border-bottom: 0;
     }
 
@@ -39,10 +44,13 @@
     #menu ul li{
         position: relative;
         display: table;
-        font-size: 26px;
+        float: none;
+        margin: 0 auto;
+        font-size: 1.5em;
     }
 
     #menu ul li ul{
+        padding-left: 4.5em;
         position: relative;
         border: none;
     }
@@ -64,6 +72,17 @@
         width: 100%;
     }
 
+    #contPrincipal td{
+        width: 50%;
+        padding: .6em;
+    }
+    #contPrincipal .img_cont{
+        width: 100%;
+        height: auto;
+    }
+    #contPrincipal td a{
+        font-size: 2em;
+    }
     #contSecundario{
         width: 90%;
     }
@@ -77,10 +96,33 @@
     #contSecundario #buscar label{
         display: block;
         max-width: 50%;
-        margin-bottom: .4em;
+        font-size: 3em;
     }
+
     #contSecundario #buscar input{
-        margin-bottom: 1em;
+        padding: 2%;
+        font-size: 3em;
+        margin-bottom: .6em;
+        float: left;
+    }
+
+    #contSecundario #buscar img{
+        width: 3em;
+        margin: 0 .6em;
+        float: left;
+    }
+
+    #contSecundario td{
+        width: 50%;
+        height: auto;
+        padding: .6em;
+    }
+    #contSecundario .previews{
+        width: 100%;
+        height: auto;
+    }
+    #contSecundario a{
+        font-size: 2em;
     }
 
     #contact, #comment{
@@ -95,14 +137,52 @@
 
     #contact label, #comment label{
         width: auto;
-        font-size: 1.2em;
+        font-size: 3em;
         margin: .5em 0;
     }
-    #pasos {
-    width: 100%;
+    #contact .textbox,  #contact .boton{
+        width: 90%;
+        font-size: 3em;
+        height: auto;
+        padding: .6em;
+    }
+
+    #contact .boton{
+        width: 100%;
+    }
+
+    #botones{
+        margin: 5em 0;
+    }
+
+    #contPrincipal #pasos {
+        width: 100%;
+        border: none;
     }
     #comment #botones{
         margin: 0;
+    }
+
+    #formulario #comment label{
+        font-size: 2em;
+    }
+
+    #formulario #comment input, #botones button{
+        width: 90%;
+        height: auto;
+        padding: .6em;
+        font-size: 3em;
+    }
+    #botones button{
+        margin: .6em 0;
+        width: 100%;
+    }
+
+    #pasos p.times{
+        font-size: 1.2em;
+    }
+    #pasos .times img.icon, #img_recetas p img.icon{
+        width: 3.5em;
     }
     video{
         width: 90%    !important;
@@ -110,6 +190,27 @@
     }
     #toTop img, #toBottom img{
         width: 90%;
+    }
+    p, text, #pasos ul li, #pasos ol li, #pasos p, #fecha p{
+        font-size: 2em;
+    }
+    h1{
+        font-size: 4em;
+    }
+    h2, h3{
+        font-size: 3em;
+    }
+    #comentariosTable .nombreTable{
+        font-size: 2.3em;
+    }
+    h4, #comentariosTable .commentTable{
+        font-size: 2.5em;
+    }
+    footer img{
+        width: 5em;
+    }
+    footer p{
+        font-size: 2em;
     }
 }
 
@@ -129,6 +230,7 @@
     }
 
     #menu{
+        height: auto;
         display: block;
     }
 
@@ -146,7 +248,7 @@
         margin: 0 auto;
     }
     #menu li a{
-        padding: 0 20%;
+        font-size: 1em;
     }
 
     #contPrincipal{
@@ -154,7 +256,7 @@
     }
 
     #contSecundario{
-        width: 45%;
+        width: 70%;
     }
     #contSecundario{
         display: table;
@@ -162,6 +264,82 @@
         float: none;
     }
 
+    #contSecundario td{
+        width: 50%;
+        height: auto;
+        padding: .6em;
+    }
+    #contSecundario .previews{
+        width: 80%;
+        height: auto;
+    }
+    #contSecundario a{
+        font-size: 1.2em;
+    }
+
+    #contPrincipal td{
+        width: 50%;
+        padding: 1em 0;
+    }
+    #contPrincipal .img_cont{
+        width: 70%;
+        height: auto;
+    }
+    #contPrincipal td a{
+        font-size: 1.2em;
+    }
+
+    #contact label, #comment label{
+        width: auto;
+        font-size: 1em;
+        margin: .5em 0;
+    }
+    #contact .textbox,  #contact .boton{
+        font-size: 1em;
+        height: auto;
+        padding: .6em;
+    }
+
+    #contSecundario #buscar{
+        width: 100%;
+        display: table;
+        margin: 0 auto;
+        float: left;
+    }
+
+    #contSecundario #buscar label{
+        display: block;
+        max-width: 50%;
+        font-size: 1.2em;
+    }
+
+    #contSecundario #buscar input{
+        width: 60%;
+        padding: 1%;
+        font-size: 1em;
+        margin-bottom: .6em;
+        float: left;
+    }
+
+    #contSecundario #buscar img{
+        width: 2em;
+        margin: 0 .6em;
+        float: left;
+    }
+
+    #botones{
+        margin: 1em 0 0 5em;
+    }
+    h2, h3,  #comentariosTable .nombreTable{
+        font-size: 1.5em;
+    }
+    h4, #comentariosTable .commentTable{
+        font-size: 1.2em;
+    }
+    #seccion_comentarios{
+        display: table;
+        margin: 0 auto;
+    }
 }
 @media only screen and (min-width: 850px), only screen and (min-device-width: 850px){
     #menu{
