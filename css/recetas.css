@@ -51,8 +51,8 @@
 }
 
 #pasos video {
-  margin-left: 10px;
-  width: 465px;
+  margin-left: 5%;
+  width: 90%;
 }
 
 #fecha p, #fecha p a{
@@ -81,14 +81,14 @@
 
 .textbox{
     width: 404px;
-    height: 25px;
     color: #b0aaa0;
     margin-left: 2.6em;
-}
-
-textarea{
-    margin-left: 3em;
-    color: #b0aaa0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #d1cfcd;
+    outline:0;
+    height:27px;
 }
 
 .boton{

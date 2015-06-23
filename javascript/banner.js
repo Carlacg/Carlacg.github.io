@@ -13,7 +13,7 @@ function toggleMenu(){
     var menu = document.getElementById('menu');
     var display = menu.style.display;
     if(display == "none"){
-        menu.style.display = "block";
+        menu.style.display = "table";
     }else{
         menu.style.display = "none";
     }
@@ -22,9 +22,9 @@ function toggleMenu(){
 $(window).resize(function() {
     if ($(window).width() > 480) {
         $('#botonMenu').css('display','none');
-        $('#menu').css("display", "block");
+        $('#menu').css("display", "table");
     }else{
-        $('#botonMenu').css('display','block');
+        $('#botonMenu').css('display','table');
         $('#menu').css("display", "none");
     }
 });

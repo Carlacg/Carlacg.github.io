@@ -15,21 +15,23 @@
     <!--Script-->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="javascript/scroll_general.js"></script>
+    <script type="text/javascript" src="javascript/contacto.js"></script>
+
 </head>
-<body id="contacto">
+<body id="contacto" onload="setValues()">
 <div id="contenedor">
     <!-- Banner y barra navegadora -->
     <script src="javascript/banner.js" language="JavaScript" type="text/javascript"></script>
     <div id="contPrincipal">
         <h2>Contacto</h2>
 
-        <p>Para contactar conmigo por favor completa el siguiente formulario, no olvides hacer clic en "enviar"
+        <p>Para contactar con nosotros por favor completa el siguiente formulario, no olvides hacer clic en "enviar"
             cuando hayas terminado!</p>
 
         <p> Se le respondera a la brevedad posible a través de un correo a la dirección de correo electrónico que
             proporcione. </p>
 
-        <form id="contact" action="">
+        <form id="contact" action="" method="post">
             <div>
                 <label for="nombre">
                     * Nombre:
@@ -46,17 +48,17 @@
                 <label for="web">
                     Sitio Web:
                 </label>
-                <input class="textbox" type="text" id="web"/>
+                <input class="textbox" type="url" id="web"/>
             </div>
             <div>
                 <label for="comentario">
                     * Comentario:
                 </label>
-                <textarea cols="70" rows="10" id="comentario" name="comentario"></textarea>
+                <textarea class="textbox" id="comentario" name="comentario" style="height: 10em;" required></textarea>
             </div>
             <div id="botones">
                 <input class="boton" type="reset" value="Limpiar campos"/>
-                <button class="boton">Enviar</button>
+                <button class="boton" onclick="enviar()">Enviar</button>
             </div>
         </form>
     </div>

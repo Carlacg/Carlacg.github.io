@@ -14,6 +14,8 @@
     <!-- Script -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="javascript/scroll_general.js"></script>
+  <script type="text/javascript" src="javascript/database.js"></script>
+
 
 </head>
 <body id="receta">
@@ -86,45 +88,12 @@
         </div>
         <div id="fecha">
             <p>Posted on may 12 2015, in entradas</p>
-            <p><a href="#comentarios">14 comentarios >></a></p>
         </div>
         <div id="seccion_comentarios">
-            <div id="formulario">
-                <h4>Deja tu comentario:</h4>
-
-                <form id="comment" action="" method="post">
-                    <div>
-                        <label for="nombre">
-                            * Nombre:
-                        </label>
-                        <input class="textbox" type="text" id="nombre" required/>
-                    </div>
-                    <div>
-                        <label for="correo">
-                            * E-mail:
-                        </label>
-                        <input class="textbox" type="email" id="correo" required/>
-                    </div>
-                    <div>
-                        <label for="web">
-                            Sitio Web:
-                        </label>
-                        <input class="textbox" type="text" id="web"/>
-                    </div>
-                    <div>
-                        <label for="comentario">
-                            * Comentario:
-                        </label>
-                        <textarea cols="56" rows="10" id="comentario" name="comentario"></textarea>
-                    </div>
-                    <div id="botones">
-                        <button class="boton">Publicar</button>
-                    </div>
-                </form>
-            </div>
+            <script src="javascript/comentariosForm.js" language="JavaScript" type="text/javascript"></script>
             <hr/>
             <div id="comentarios">
-                <h4>14 Comentarios</h4>
+              <script src="javascript/comentariosTable.js" language="JavaScript" type="text/javascript"></script>
             </div>
         </div>
     </div>
